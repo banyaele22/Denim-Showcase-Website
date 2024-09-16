@@ -1,0 +1,42 @@
+@font-face {
+    font-family:'Dafont' ;
+    src: url(./brains_courage/Brains\ Courage\ Demo.otf);
+}
+h1{
+    
+    font-family: 'Dafont', sans-serif;
+    color:rgb(6, 6, 41);
+    letter-spacing: 30px;
+    font-size: 60px;
+}
+.title-image{
+    
+    float:left;
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+body{
+    background-color: rgb(255, 245, 230);
+}
+.NakedFamous{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius:50%;
+    font-style: italic;
+}
+.NakedFamous-title{
+text-align: center;
+
+}
+.NakedFamous-subtitle{
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    }
