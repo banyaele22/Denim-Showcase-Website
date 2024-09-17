@@ -27,8 +27,9 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
-    border-radius:50%;
+    width: 32%;
+    height: 23%;
+    border-radius:23%;
     font-style: italic;
 }
 .NakedFamous-title{
