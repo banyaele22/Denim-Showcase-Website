@@ -7,7 +7,8 @@
     src: url(./brains_courage/Brains\ Courage\ Demo.otf);
 }
 h1{
-    
+    padding: 0;
+    margin: 0;
     font-family: 'Dafont', sans-serif;
     color:rgb(6, 6, 41);
     letter-spacing: 30px;
@@ -18,17 +19,7 @@ h1{
 .title{
     text-decoration: none
 }
-.title-image{
-    
-    float:left;
-    width: 90px;
-    height: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    text-decoration: none
-}
+
 body{
     background-color: rgb(255, 245, 230);
 }
@@ -54,7 +45,7 @@ font-family:'Subtitle';
     font-style: italic;
     }
 a {
-     text-decoration: none; /* Removes underline by default */
+     text-decoration: none;
         
 }
 .NakedFamous-description{
@@ -69,6 +60,7 @@ a {
     display:inline-block;
 }
 .NakedFamous-Container{
+
     text-align: center;
     margin-left: auto;
     margin-right: auto;
