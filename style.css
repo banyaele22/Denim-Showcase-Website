@@ -6,68 +6,98 @@
     font-family: 'Subtitle';
     src: url(./brains_courage/Brains\ Courage\ Demo.otf);
 }
-h1{
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: 'Karla';
+    src: url(./karla/Karla-Regular.ttf);
+}
+.logo {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     font-family: 'Dafont', sans-serif;
     color:rgb(6, 6, 41);
-    letter-spacing: 30px;
     font-size: 60px;
     text-decoration: none;
 
 }
-.title{
-    text-decoration: none
-}
-
-body{
+body, html
+{
     background-color: rgb(255, 245, 230);
+    margin: 0;
+    padding: 0;
 }
-.NakedFamous{
-    text-align: center;
-    
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    height: 40%;
-    border-radius:50%;
-    font-style: italic;
-    display:inline-block;
-}
-.NakedFamous-title{
-text-align: center;
-font-family:'Subtitle';
-
-}
-.NakedFamous-subtitle{
-    text-align: center;
-    font-size: large;
-    font-style: italic;
-    }
-a {
+a{
      text-decoration: none;
         
 }
-.NakedFamous-description{
-    text-align: center;
-    
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    height: 40%;
-    border-radius:50%;
-    font-style: italic;
-    display:inline-block;
-}
-.NakedFamous-Container{
 
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
-    border-radius:50%;
-    font-style: italic;
-    display:block;
+
+.navbar{
+    font-family: "Karla", Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(173, 161, 192);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0; 
+    padding-right: 5%; 
+    margin: 0; 
+    font-weight: lighter; 
+ 
+}
+.highlight:hover{
+    color: black;
+  color: hsl(340, 77%, 40%);  
+}
+.logo:hover{
+    color: black;
+    color: hsl(340, 77%, 40%); 
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    border:40% rgb(black);
+}
+.navbar ul li{
+    padding:10px 30px;
+    position: relative;
+
+
+}
+.navbar ul li a{
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 14px;
+    transition:all 0.3s;
+}
+.navbar ul li a:hover{
+    color:aquamarine;
+}
+.dropdown{
+    display:none;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.navbar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:rgb(31, 6, 65);
+    color: coral;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+
+}
+.dropdown ul li{
+    width: 150px;
+    padding: 10px;
+}
+.dropdown ul{
+    font-size: 1%;
     
 }
