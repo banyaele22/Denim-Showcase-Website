@@ -10,8 +10,35 @@
     font-family: 'Karla';
     src: url(./karla/Karla-Regular.ttf);
 }
+@keyframes transitionIn{
+from {
+    opacity: 0;
+    transform: rotateX(-10deg)
+
+    
+}
+to{
+    opacitiy: 1;
+    transform:rotateX(0)
+}
+
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+body{
+    overflow-x: hidden;
+}
+
 .logo {
-    text-align: center;
     margin-right: auto;
     margin-left: auto;
     font-family: 'Dafont', sans-serif;
@@ -22,9 +49,10 @@
 }
 body, html
 {
-    background-color: rgb(255, 245, 230);
+    background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
+    
 }
 a{
      text-decoration: none;
@@ -34,7 +62,7 @@ a{
 
 .navbar{
     font-family: "Karla", Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: rgb(173, 161, 192);
+    background-color: rgb(255, 255, 255);
     height: 50px;
     width: 100%;
     display: flex;
@@ -44,6 +72,8 @@ a{
     padding-right: 5%; 
     margin: 0; 
     font-weight: lighter; 
+    box-shadow: 3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
  
 }
 .highlight:hover{
@@ -66,17 +96,17 @@ a{
 
 }
 .navbar ul li a{
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
     text-decoration: none;
     font-size: 14px;
     transition:all 0.3s;
 }
 .navbar ul li a:hover{
-    color:aquamarine;
+    color:hsl(340, 77%, 40%);
 }
 .dropdown{
     display:none;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -85,8 +115,10 @@ a{
     position: absolute;
     left: 0;
     top: 100%;
-    background-color:rgb(31, 6, 65);
+    background-color:rgb(255, 255, 255);
     color: coral;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
 }
 .dropdown ul{
     display: block;
@@ -98,6 +130,99 @@ a{
     padding: 10px;
 }
 .dropdown ul{
-    font-size: 1%;
+    font-size: 1%; 
+}
+
+.NakedFamous-title{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    font-family: "Karla";
+    text-align: center;
+    font-size: 60px;
+     
+}
+
+.NakedFamous-img1{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    box-shadow: 45px 45px 45px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     
+    height: 40%;
+}
+
+.NakedFamous-quote{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    font-family: "Karla";
+    text-align: center;
+    font-size: 25px;
+   
+
+}
+.NakedFamous-description{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    font-family: "Karla";
+    text-align: center;
+    font-size: 140%;
+    width: 60%;
+    margin: 1% auto;
+    padding: 30px;
+    line-height: 2.8;
+
+    
+}
+
+.IndigoDenim-title{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    font-family: "Karla";
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 175px;
+}
+
+
+.SelvedgeDenim-NF{
+    margin-top: -230px;
+
+}
+
+
+.Indigo1,.Indigo2,.Indigo3{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+   
+    width: 350px;
+    height: 350px;
+}
+
+.wordlight{
+    color: hsl(340, 77%, 40%); 
+}
+.photo--subtitles{
+    font-style: italic;
+}
+.Fades{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    font-family: "Karla";
+    text-align: center;
+    font-size: 60px;
+    
+}
+
+.NF-Fade1,.NF-Fade2,.NF-Fade3{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    width: 600px;
 }
