@@ -50,8 +50,10 @@ body{
 body, html
 {
     background-color: rgb(255, 255, 255);
+    height: 100%;
     margin: 0;
-    padding: 0;
+    padding:0;
+
     
 }
 a{
@@ -133,7 +135,7 @@ a{
     font-size: 1%; 
 }
 
-.NakedFamous-title{
+.NakedFamous-title,.IronHeart-title,.Home-Title,.Brands-title,.Osaka-title,.Tips-title,.threesixteen-title{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -143,14 +145,19 @@ a{
      
 }
 
-.NakedFamous-img1{
+.NakedFamous-img1,.Ironheart-img1,.threesixteen-img{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+   display: block;
     box-shadow: 45px 45px 45px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     
-    height: 40%;
+    
+    width: 30%;
+ 
 }
 
 .NakedFamous-quote{
@@ -160,13 +167,14 @@ a{
     font-family: "Karla";
     text-align: center;
     font-size: 25px;
+    padding: 60px;
    
 
 }
-.NakedFamous-description{
+.NakedFamous-description,.IronHeart-description,.threesixteen-description{
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+    animation-range: entry 0% cover 10%;
     font-family: "Karla";
     text-align: center;
     font-size: 140%;
@@ -181,7 +189,7 @@ a{
 .IndigoDenim-title{
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0;
+    animation-range: entry 0% cover 40%;
     font-family: "Karla";
     text-align: center;
     font-size: 60px;
@@ -200,12 +208,15 @@ a{
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
    
-    width: 350px;
-    height: 350px;
+    width: 60%;
+    height: auto;
 }
 
 .wordlight{
     color: hsl(340, 77%, 40%); 
+}
+.wordlight2{
+    color: rgb(87, 35, 230);
 }
 .photo--subtitles{
     font-style: italic;
@@ -223,6 +234,156 @@ a{
 .NF-Fade1,.NF-Fade2,.NF-Fade3{
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0;
-    width: 600px;
+    animation-range: entry 0% cover 40%;
+    width: 60%;
+    height:auto;
+    
+            
+
+    
+}
+.Notes{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.Ironheart-shuttlelooms{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    font-family: "Karla";
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 60px;
+}
+footer {
+    box-sizing: border-box;
+    
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(61, 60, 60);
+    color: white;
+    text-transform: capitalize;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: auto; /* This pushes the footer to the bottom */
+  
+   
+    
+
+  }
+  body > footer {
+    position: sticky;
+    top: 100vh;
+  }
+  .home-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: Karla;
+
+}
+
+ .home-container p{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 36px; 
+    font-weight: bold; 
+    z-index: 1; /
+    
+}
+
+.Home1,.Home2,.Home3{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    padding-left: 4%;
+    filter: grayscale(1);
+    gap: 20px;
+}
+
+
+
+
+.Home-images{
+    display: flex;
+    padding-bottom: 4%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+ 
+}
+
+.Home1:hover,.Home2:hover,.Home3:hover{
+    filter: none;
+}
+
+.osaka-container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    color: white;
+    position: relative;
+    font-family: Karla;
+
+}
+.osaka-container p{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 36px; 
+    font-weight: bold; 
+    z-index: 1;
+}
+
+.osaka-Home1,.osaka-Home2,.osaka-Home3,.osaka-Home4,.osaka-Home5{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    padding-left: 4%;
+    filter: grayscale(1);
+    gap: 20px;
+}
+.osaka-Home1:hover,.osaka-Home2:hover,.osaka-Home3:hover,.osaka-Home4:hover,.osaka-Home5:hover{
+    filter: none;
+}
+.Osaka-images{
+    display: flex;
+    padding-bottom: 4%;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+
+}
+.Osaka-title p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.8;
+}
+.wordlight3{
+    color: hsl(106, 90%, 38%);
+}
+.threesixteen-img1,.threesixteen-img2{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    margin-left: auto;
+    margin-right: auto;
+   display: block;
+    box-shadow: 45px 45px 45px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+    
+    width: 50%;
 }
