@@ -1,14 +1,14 @@
 @font-face {
     font-family:'Dafont' ;
-    src: url(./vanilla_whale/Vanilla\ Whale.otf);
+    src: url(../fonts/vanilla_whale/Vanilla\ Whale.otf);
 }
 @font-face {
     font-family: 'Subtitle';
-    src: url(./brains_courage/Brains\ Courage\ Demo.otf);
+    src: url(../fonts/brains_courage/Brains\ Courage\ Demo.otf);
 }
 @font-face {
     font-family: 'Karla';
-    src: url(./karla/Karla-Regular.ttf);
+    src: url(../fonts/karla/Karla-Regular.ttf);
 }
 @keyframes transitionIn{
 from {
@@ -164,7 +164,7 @@ a{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
-    font-family: "Karla";
+    
     text-align: center;
     font-size: 25px;
     padding: 60px;
@@ -175,7 +175,7 @@ a{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 10%;
-    font-family: "Karla";
+    
     text-align: center;
     font-size: 140%;
     width: 60%;
@@ -374,7 +374,7 @@ footer {
 .wordlight3{
     color: hsl(106, 90%, 38%);
 }
-.threesixteen-img1,.threesixteen-img2{
+.threesixteen-img1,.threesixteesn-img2{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
