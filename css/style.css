@@ -135,7 +135,7 @@ a{
     font-size: 1%; 
 }
 
-.NakedFamous-title,.IronHeart-title,.Home-Title,.Brands-title,.Osaka-title,.Tips-title,.threesixteen-title{
+.NakedFamous-title,.IronHeart-title,.Home-Title,.Brands-title,.Osaka-title,.Tips-title,.threesixteen-title,.Subscribe-title{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
